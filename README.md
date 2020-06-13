@@ -22,6 +22,6 @@ Enjoy!
 ## Example
 
 ```
-node dist/index.js --name data/travel_bag --m3u https://...k.m3u8
+yarn download --name data/travel_bag --m3u https://...k.m3u8
 ```
 
