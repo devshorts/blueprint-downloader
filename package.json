@@ -1,0 +1,38 @@
+{
+  "name": "blueprint-downloader",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "description": "Blue",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^12.7.9",
+    "@types/youtube-dl": "^1.12.2",
+    "jest": "^24.8.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "compile": "npx tsc -b",
+    "watch": "npx tsc -b -w",
+    "prepublish": "yarn compile",
+    "download": "node ./dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "bin": {
+    "bluprint": "./dist/index.js"
+  },
+  "dependencies": {
+    "commander": "^5.1.0",
+    "ffmpeg-static": "^4.2.3",
+    "ololog": "^1.1.156",
+    "paradox-multi-spinner": "^1.0.2",
+    "youtube-dl": "^3.0.2"
+  }
+}
